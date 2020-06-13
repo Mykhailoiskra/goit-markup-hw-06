@@ -803,6 +803,8 @@ footer {
 
 .checkbox-field {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-field label {
@@ -816,6 +818,12 @@ footer {
 
 .checkbox-field a {
   color: var(--accent-color);
+}
+
+#user-consent {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
 }
 
 .form-button {
