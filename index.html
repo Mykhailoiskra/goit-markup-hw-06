@@ -439,19 +439,51 @@
       <p class="disclaimer">2020 | Developed by GoIT Students</p>
     </footer>
 
-    <form class="feedback-form">
+    <form class="feedback-form" autocomplete="off">
+      <button class="close-button">
+        <svg width="11" height="11">
+          <use href="./images/sprite.svg#icon-icon-close"></use>
+        </svg>
+      </button>
       <b> Оставьте свои данные, мы вам перезвоним</b>
-      <div class="input-field">
-        <label for="user-name">Имя</label>
-        <input type="text" name="name" id="user-name" />
+      <div class="form-field">
+        <input
+          type="text"
+          name="name"
+          id="user-name"
+          class="form-input"
+          placeholder=" "
+        />
+        <label for="user-name" class="form-label">Имя</label>
+        <svg class="form-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-user-name"></use>
+        </svg>
       </div>
-      <div class="input-field">
-        <label for="user-telephone">Телефон</label>
-        <input type="tel" name="tel" id="user-telephone" />
+      <div class="form-field">
+        <input
+          type="tel"
+          name="tel"
+          id="user-telephone"
+          class="form-input"
+          placeholder=" "
+        />
+        <label for="user-telephone" class="form-label">Телефон</label>
+        <svg class="form-icon" width="13" height="13">
+          <use href="./images/sprite.svg#icon-user-phone"></use>
+        </svg>
       </div>
-      <div class="input-field">
-        <label for="user-email">Почта</label>
-        <input type="email" name="email" id="user-email" />
+      <div class="form-field">
+        <input
+          type="email"
+          name="email"
+          id="user-email"
+          class="form-input"
+          placeholder=" "
+        />
+        <label for="user-email" class="form-label">Почта</label>
+        <svg class="form-icon" width="15" height="12">
+          <use href="./images/sprite.svg#icon-user-email"></use>
+        </svg>
       </div>
       <textarea
         name="user-comment"
