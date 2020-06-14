@@ -55,7 +55,9 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a class="hero-button" href="#">Заказать услугу</a>
+        <button data-modal-open class="hero-button" href="#">
+          Заказать услугу
+        </button>
       </section>
       <!-- Секция с описанием компетенций веб студии-->
       <section class="competencies container">
@@ -418,7 +420,7 @@
           </ul>
         </div>
 
-        <form class="join-form">
+        <form class="join-form" autocomplete="off">
           <p class="join-text">Подпишитесь на рассылку</p>
           <div class="form-thumb">
             <input
@@ -438,55 +440,57 @@
       </div>
       <p class="disclaimer">2020 | Developed by GoIT Students</p>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <form class="feedback-form" autocomplete="off">
+        <button data-modal-close class="close-button">
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+        <b> Оставьте свои данные, мы вам перезвоним</b>
+        <label class="form-field">
+          <input type="text" name="name" class="form-input" placeholder=" " />
+          <span class="form-label">Имя</span>
+          <svg class="form-icon" width="12" height="12">
+            <use href="./images/sprite.svg#icon-user-name"></use>
+          </svg>
+        </label>
 
-    <form class="feedback-form" autocomplete="off">
-      <button class="close-button">
-        <svg width="11" height="11">
-          <use href="./images/sprite.svg#icon-icon-close"></use>
-        </svg>
-      </button>
-      <b> Оставьте свои данные, мы вам перезвоним</b>
-      <label class="form-field">
-        <input type="text" name="name" class="form-input" placeholder=" " />
-        <span class="form-label">Имя</span>
-        <svg class="form-icon" width="12" height="12">
-          <use href="./images/sprite.svg#icon-user-name"></use>
-        </svg>
-      </label>
+        <label class="form-field">
+          <input type="tel" name="tel" class="form-input" placeholder=" " />
+          <span class="form-label">Телефон</span>
+          <svg class="form-icon" width="13" height="13">
+            <use href="./images/sprite.svg#icon-user-phone"></use>
+          </svg>
+        </label>
 
-      <label class="form-field">
-        <input type="tel" name="tel" class="form-input" placeholder=" " />
-        <span class="form-label">Телефон</span>
-        <svg class="form-icon" width="13" height="13">
-          <use href="./images/sprite.svg#icon-user-phone"></use>
-        </svg>
-      </label>
+        <label class="form-field">
+          <input type="email" name="email" class="form-input" placeholder=" " />
+          <span class="form-label">Почта</span>
 
-      <label class="form-field">
-        <input type="email" name="email" class="form-input" placeholder=" " />
-        <span class="form-label">Почта</span>
+          <svg class="form-icon" width="15" height="12">
+            <use href="./images/sprite.svg#icon-user-email"></use>
+          </svg>
+        </label>
 
-        <svg class="form-icon" width="15" height="12">
-          <use href="./images/sprite.svg#icon-user-email"></use>
-        </svg>
-      </label>
+        <label class="comment-field">
+          <textarea
+            name="user-comment"
+            class="comment-box"
+            placeholder=" "
+          ></textarea>
+          <span class="comment-label">Комментарий</span>
+        </label>
 
-      <label class="comment-field">
-        <textarea
-          name="user-comment"
-          class="comment-box"
-          placeholder=" "
-        ></textarea>
-        <span class="comment-label">Комментарий</span>
-      </label>
-
-      <label class="checkbox-field"
-        ><input name="user-consent" type="checkbox" class="checkbox" />
-        <span class="custom-icon"></span>
-        Соглашаюсь с рассылкой и принимаю
-        <a href="#"> Условия договора</a>
-      </label>
-      <button class="form-button" type="submit">Отправить</button>
-    </form>
+        <label class="checkbox-field"
+          ><input name="user-consent" type="checkbox" class="checkbox" />
+          <span class="custom-icon"></span>
+          Соглашаюсь с рассылкой и принимаю
+          <a href="#"> Условия договора</a>
+        </label>
+        <button class="form-button" type="submit">Отправить</button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
