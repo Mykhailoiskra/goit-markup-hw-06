@@ -229,33 +229,6 @@ img {
   margin-bottom: 30px;
 }
 
-/* .competencies-list .item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.satellite-icon::before {
-  background-image: url(../images/satellite-plate.svg);
-}
-
-.clock-icon::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram-icon::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.astronaut-icon::before {
-  background-image: url(../images/astronaut.svg);
-} */
-
 .competencies-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -640,9 +613,6 @@ footer {
   cursor: pointer;
 }
 
-.join-button-text {
-  margin: 0;
-}
 .icon-send {
   fill: #ffffff;
   margin-left: 10px;
