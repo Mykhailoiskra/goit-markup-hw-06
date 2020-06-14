@@ -446,50 +446,39 @@
         </svg>
       </button>
       <b> Оставьте свои данные, мы вам перезвоним</b>
-      <div class="form-field">
-        <input
-          type="text"
-          name="name"
-          id="user-name"
-          class="form-input"
-          placeholder=" "
-        />
-        <label for="user-name" class="form-label">Имя</label>
+      <label class="form-field">
+        <input type="text" name="name" class="form-input" placeholder=" " />
+        <span class="form-label">Имя</span>
         <svg class="form-icon" width="12" height="12">
           <use href="./images/sprite.svg#icon-user-name"></use>
         </svg>
-      </div>
-      <div class="form-field">
-        <input
-          type="tel"
-          name="tel"
-          id="user-telephone"
-          class="form-input"
-          placeholder=" "
-        />
-        <label for="user-telephone" class="form-label">Телефон</label>
+      </label>
+
+      <label class="form-field">
+        <input type="tel" name="tel" class="form-input" placeholder=" " />
+        <span class="form-label">Телефон</span>
         <svg class="form-icon" width="13" height="13">
           <use href="./images/sprite.svg#icon-user-phone"></use>
         </svg>
-      </div>
-      <div class="form-field">
-        <input
-          type="email"
-          name="email"
-          id="user-email"
-          class="form-input"
-          placeholder=" "
-        />
-        <label for="user-email" class="form-label">Почта</label>
+      </label>
+
+      <label class="form-field">
+        <input type="email" name="email" class="form-input" placeholder=" " />
+        <span class="form-label">Почта</span>
+
         <svg class="form-icon" width="15" height="12">
           <use href="./images/sprite.svg#icon-user-email"></use>
         </svg>
-      </div>
-      <textarea
-        name="user-comment"
-        id="comment-box"
-        placeholder="Комментарий"
-      ></textarea>
+      </label>
+
+      <label class="comment-field">
+        <textarea
+          name="user-comment"
+          class="comment-box"
+          placeholder=" "
+        ></textarea>
+        <span class="comment-label">Комментарий</span>
+      </label>
       <div class="checkbox-field">
         <input name="user-consent" type="checkbox" id="user-consent" />
         <label for="user-consent"
